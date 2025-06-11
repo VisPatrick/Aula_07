@@ -77,23 +77,15 @@ try:
         print('Não há outliers inferiores')
     else:
         print(df_estelionato_outliers_inferior.sort_values(by='estelionato', ascending=True))
-
+    
 #   OUTLIERS SUPERIORES
     print(f'\nOutliers Superiores')
     print(67*'~')
     if len(df_estelionato_outliers_superior) == 0:
-        print('Não há outliers Superiores')
+        print('Não há outliers superiores')
     else:
-        print(df_estelionato_outliers_superior.sort_values(by='roubo_veiculo', ascending=False))
-
-
-
-
-
-
-
-
+        print(df_estelionato_outliers_superior.sort_values(by='estelionato', ascending=False))
+    
 
 except Exception as u:
     print('Erro de informações: {u}')
-
